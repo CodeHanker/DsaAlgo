@@ -1,5 +1,19 @@
 package Competitive_Prog.Leetcode.Array;
 
+/*
+Intuition
+Two pointers approach for in-place swapping as there should not be use of extra memory
+
+Approach
+Initialize start and end indexes as start = 0, end = arrayLength-1
+In a loop, swap arr[start] with arr[end] and change start and end as follows :
+start = start+1, end = end-1
+
+Complexity
+Time complexity: O(n)
+Space complexity: O(1)
+ */
+
 public class P_344_ReverseStringArrayInplace {
 
     static void rvereseArray(String arr[])

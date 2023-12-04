@@ -1,6 +1,6 @@
 package Competitive_Prog.Leetcode.Array;
 
-public class P_344_ReverseArrayInPlace {
+public class P_344_ReverseArrayInPlaceRecursively {
 
     public static void reverseString(char[] s) {
         int start = 0;
