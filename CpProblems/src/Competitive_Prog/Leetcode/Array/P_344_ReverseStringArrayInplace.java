@@ -6,16 +6,15 @@ public class P_344_ReverseStringArrayInplace {
     {
         String temp;
         int end = arr.length-1;
-        for(int i = 0; i < end; i++, end--) {
-            //in-place swapping
-            temp = arr[i];
-            arr[i] = arr[end];
+        for(int start = 0; start < end; start++, end--) {
+            //in-place swapping using two-pointers
+            temp = arr[start];
+            arr[start] = arr[end];
             arr[end] = temp;
         }
     }
 
-    /* Utility that prints out an
-    array on a line */
+    /* Utility that prints out an array on a line */
     static void printArray(String arr[])
     {
         for (int i = 0; i < arr.length; i++)
