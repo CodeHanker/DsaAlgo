@@ -1,6 +1,6 @@
 package Competitive_Prog.Leetcode.Array;
 
-public class ReverseStringArrayInplace {
+public class P_344_ReverseStringArrayInplace {
 
     static void rvereseArray(String arr[])
     {
