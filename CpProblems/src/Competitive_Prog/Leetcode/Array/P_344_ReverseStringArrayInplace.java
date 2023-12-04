@@ -14,9 +14,11 @@ Time complexity: O(n)
 Space complexity: O(1)
  */
 
+import Competitive_Prog.Common.Utility.PrintArray;
+
 public class P_344_ReverseStringArrayInplace {
 
-    static void rvereseArray(String arr[])
+    static void reverseArray(String arr[])
     {
         String temp;
         int end = arr.length-1;
@@ -28,23 +30,14 @@ public class P_344_ReverseStringArrayInplace {
         }
     }
 
-    /* Utility that prints out an array on a line */
-    static void printArray(String arr[])
-    {
-        for (int i = 0; i < arr.length; i++)
-            System.out.print(arr[i] + " ");
-
-        System.out.println();
-    }
-
     // Driver code
     public static void main(String args[]) {
 
         //int arr[] = {1, 2, 3, 4, 5, 6};
         String arr[] = {"h","e","l","l","o"};
-        printArray(arr);
-        rvereseArray(arr);
+        PrintArray.printArray(arr);
+        reverseArray(arr);
         System.out.print("Reversed array is \n");
-        printArray(arr);
+        PrintArray.printArray(arr);
     }
 }
