@@ -47,6 +47,7 @@ public class P_9_PalindromeNumber {
     */
 
     public boolean isPalindrome2(int x) {
+        //any one-digit number is a palindrome
         if (x < 0 || (x!=0 && x%10 ==  0)) {
             return false;
         }
